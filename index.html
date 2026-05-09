@@ -9,22 +9,33 @@
 <body>
 
 <header class="hero">
+    <div class="topbar">
+        <a class="brand" href="#">DevOpsLab</a>
+        <nav class="hero-nav">
+            <a href="#overview">Overview</a>
+            <a href="#features">Features</a>
+            <a href="#metrics">Metrics</a>
+        </nav>
+    </div>
     <div class="hero-content">
         <p class="eyebrow">DevOps Demo</p>
-        <h1>🚀 Welcome to the DevOps Test Site</h1>
-        <p class="hero-copy">A clean, responsive demo site built with Docker, Jenkins, GitHub, and Apache HTTP.</p>
-        <button onclick="showMessage()">View deployment status</button>
+        <h1>Accelerated Deployment with Docker + Jenkins</h1>
+        <p class="hero-copy">A polished, responsive portal showing the power of containerized delivery and automated CI/CD.</p>
+        <div class="hero-actions">
+            <button onclick="showMessage()">Check deployment status</button>
+            <a class="secondary-button" href="#overview">Learn more</a>
+        </div>
         <p id="message" class="status-message" aria-live="polite"></p>
     </div>
 </header>
 
 <main class="page-content">
-    <section class="overview card">
+    <section id="overview" class="overview card">
         <h2>Project Overview</h2>
         <p>This sample application demonstrates a simple DevOps workflow with containerized delivery and continuous deployment.</p>
     </section>
 
-    <section class="features grid">
+    <section id="features" class="features grid">
         <article class="feature card">
             <h3>Source Control</h3>
             <p>Managed in GitHub with clean branching and version history.</p>
@@ -41,6 +52,28 @@
             <h3>Web Server</h3>
             <p>Served with Apache HTTP for stable web hosting and fast response.</p>
         </article>
+    </section>
+
+    <section id="metrics" class="metrics card">
+        <h2>Operational Highlights</h2>
+        <div class="metrics-grid">
+            <article class="metric-card">
+                <p class="metric-value">99.9%</p>
+                <p class="metric-label">Deployment success rate</p>
+            </article>
+            <article class="metric-card">
+                <p class="metric-value">12 min</p>
+                <p class="metric-label">Average build time</p>
+            </article>
+            <article class="metric-card">
+                <p class="metric-value">4</p>
+                <p class="metric-label">Pipeline stages</p>
+            </article>
+            <article class="metric-card">
+                <p class="metric-value">100%</p>
+                <p class="metric-label">Container parity</p>
+            </article>
+        </div>
     </section>
 </main>
 
