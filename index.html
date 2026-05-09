@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevOps Test Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🚀 Welcome to My DevOps Test Website</h1>
+    <p>Hosted using Docker HTTP Container + Jenkins Pipeline + GitHub</p>
+</header>
+
+<section class="content">
+    <h2>Project Information</h2>
+
+    <ul>
+        <li>Source Code: GitHub</li>
+        <li>CI/CD Tool: Jenkins</li>
+        <li>Container: Docker</li>
+        <li>Web Server: Apache HTTP</li>
+    </ul>
+
+    <button onclick="showMessage()">Click Me</button>
+
+    <p id="message"></p>
+</section>
+
+<footer>
+    <p>Created by Rohit Singh | DevOps Engineer</p>
+</footer>
+
+<script>
+function showMessage(){
+    document.getElementById("message").innerHTML =
+    "✅ Jenkins Pipeline Deployment Successful!";
+}
+</script>
+
+</body>
+</html>
